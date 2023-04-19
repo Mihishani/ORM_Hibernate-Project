@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="pane1" prefHeight="888.0" prefWidth="1199.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.gdse.Controller.ReservationFormController">
+   <children>
+      <ImageView fitHeight="888.0" fitWidth="1199.0">
+         <image>
+            <Image url="@../assets/MainPage.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="409.0" layoutY="46.0" prefHeight="70.0" prefWidth="411.0" text="Reservation Form..." textFill="#0d0c0c" underline="true">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="91.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation_Id            " wrappingWidth="267.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="809.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblReservationid" layoutX="91.0" layoutY="254.0" prefHeight="36.0" prefWidth="166.0" style="-fx-background-color: white;" text=" " />
+      <Label fx:id="lblDate" layoutX="790.0" layoutY="254.0" prefHeight="36.0" prefWidth="223.0" style="-fx-background-color: white;" text=" " />
+      <ComboBox fx:id="cmdStudentId" layoutX="43.0" layoutY="404.0" onAction="#cmdStudentIdOnAction" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtSName" layoutX="225.0" layoutY="404.0" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtSAddress" layoutX="479.0" layoutY="404.0" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtGender" layoutX="992.0" layoutY="404.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtSTelNum" layoutX="735.0" layoutY="404.0" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #c19a6b;" />
+      <Text layoutX="43.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student_Id" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="250.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="504.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="754.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="999.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Gender" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmdRoomId" layoutX="43.0" layoutY="495.0" onAction="#cmdRoomIdOnAction" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtRoomType" layoutX="225.0" layoutY="495.0" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtQty" layoutX="992.0" layoutY="495.0" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtQtyOnHand" layoutX="766.0" layoutY="495.0" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #c19a6b;" />
+      <TextField fx:id="txtKeyMoney" layoutX="479.0" layoutY="495.0" prefHeight="31.0" prefWidth="216.0" style="-fx-background-color: #c19a6b;" />
+      <Text layoutX="43.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room_Id" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="250.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room_Type" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="504.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key_Money" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="760.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty on hand" wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="999.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty " wrappingWidth="165.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

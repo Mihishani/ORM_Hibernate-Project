@@ -1,0 +1,5 @@
+package lk.ijse.orm.gdse.util;
+
+public enum Route {
+    MAINPAGE,USERLOGIN,USERFORM,STUDENTFORM,ROOMFORM,RESERVATION,DASHBOARD
+}

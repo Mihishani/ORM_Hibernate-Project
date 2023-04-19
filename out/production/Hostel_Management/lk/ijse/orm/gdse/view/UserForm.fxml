@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="878.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.gdse.Controller.UserFormController">
+   <children>
+      <ImageView fx:id="pane1" fitHeight="878.0" fitWidth="1201.0">
+         <image>
+            <Image url="@../assets/MainPage.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="480.0" layoutY="41.0" prefHeight="70.0" prefWidth="272.0" text="User Form..." textFill="#0d0c0c" underline="true">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserId" layoutX="365.0" layoutY="215.0" prefHeight="46.0" prefWidth="520.0" promptText="User_Id.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" layoutX="365.0" layoutY="275.0" prefHeight="46.0" prefWidth="520.0" promptText="User_Name..." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUsertelphone" layoutX="365.0" layoutY="331.0" prefHeight="46.0" prefWidth="520.0" promptText="User_Telphone.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtuserEmail" layoutX="365.0" layoutY="385.0" prefHeight="46.0" prefWidth="520.0" promptText="User_Email.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="365.0" layoutY="444.0" prefHeight="46.0" prefWidth="520.0" promptText="User_Password.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="115.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User_Id            " wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User_Name             " wrappingWidth="223.67089635133743">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telphone no             " wrappingWidth="254.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email           " wrappingWidth="158.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password          " wrappingWidth="189.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="331.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" layoutX="992.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #8fbc8f;" text="ADD" textFill="#171515">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="992.0" layoutY="408.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #ff6347;" text=" DELETE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="992.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #ff8243;" text=" UPDATE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnView" layoutX="992.0" layoutY="346.0" mnemonicParsing="false" onAction="#btnViewOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #5f9ea0;" text=" VIEW" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView layoutX="105.0" layoutY="513.0" prefHeight="356.0" prefWidth="1042.0" style="-fx-background-color: #d2b48c;">
+        <columns>
+          <TableColumn fx:id="clmUserId" prefWidth="149.0" text=" User Id" />
+          <TableColumn fx:id="clmUserName" prefWidth="210.0" text=" User Name" />
+            <TableColumn fx:id="clmtelNumber" prefWidth="198.0" text=" Telephone Number" />
+            <TableColumn fx:id="clmUserEmail" prefWidth="290.0" text=" User Email" />
+            <TableColumn fx:id="clmPassword" prefWidth="193.0" text=" Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

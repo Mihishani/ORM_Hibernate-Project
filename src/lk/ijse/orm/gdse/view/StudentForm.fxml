@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane1" prefHeight="888.0" prefWidth="1199.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.gdse.Controller.StudentFormController">
+   <children>
+      <ImageView fitHeight="888.0" fitWidth="1199.0">
+         <image>
+            <Image url="@../assets/MainPage.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="490.0" layoutY="51.0" prefHeight="70.0" prefWidth="414.0" text="Student Form..." textFill="#0d0c0c" underline="true">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStudentId" layoutX="374.0" layoutY="188.0" prefHeight="46.0" prefWidth="520.0" promptText="Student_Id.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtStudentName" layoutX="374.0" layoutY="244.0" prefHeight="46.0" prefWidth="520.0" promptText="Student_Name..." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="374.0" layoutY="299.0" prefHeight="46.0" prefWidth="520.0" promptText="Address..." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelphoneNO" layoutX="374.0" layoutY="353.0" prefHeight="46.0" prefWidth="520.0" promptText="Telephone_No.." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGender" layoutX="374.0" layoutY="460.0" prefHeight="46.0" prefWidth="520.0" promptText="Gender..." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="70.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student_Id            " wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student_Name            " wrappingWidth="254.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone No" wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" layoutX="1002.0" layoutY="267.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #8fbc8f;" text="ADD" textFill="#171515">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="1002.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #ff8243;" text=" SAVE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnView" layoutX="1002.0" layoutY="322.0" mnemonicParsing="false" onAction="#btnViewOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #5f9ea0;" text=" VIEW" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="1002.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #ff6347;" text=" DELETE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblStudent" layoutX="24.0" layoutY="521.0" prefHeight="381.0" prefWidth="1166.0" style="-fx-background-color: #d2b48c;">
+        <columns>
+          <TableColumn fx:id="clmStudentId" prefWidth="156.99996948242188" text=" Student Id" />
+          <TableColumn fx:id="clmStudentName" prefWidth="203.0" text=" Student Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="221.0" text=" Address" />
+            <TableColumn fx:id="clmTelNumber" prefWidth="224.0" text=" Telephone No" />
+            <TableColumn fx:id="clmDateOfBirth" prefWidth="188.0" text=" Date Of Birth" />
+            <TableColumn fx:id="clmGender" prefWidth="199.0" text=" Gender" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDateOfBirth" layoutX="374.0" layoutY="406.0" prefHeight="46.0" prefWidth="520.0" promptText="DateOfBirth..." style="-fx-background-color: #a67b5b;">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <Text layoutX="334.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" :">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DateOfBirth" wrappingWidth="206.6708984375">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
